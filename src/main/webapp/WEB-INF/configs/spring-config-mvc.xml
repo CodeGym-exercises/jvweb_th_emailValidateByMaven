@@ -1,0 +1,13 @@
+
+<context:annotation-config />
+
+<mvc:annotation-driven/>
+
+<context:component-scan base-package="controller"/>
+
+
+<bean id="viewResolver"
+
+      p:prefix="/WEB-INF/views/" p:suffix=".jsp"
+
+      class="org.springframework.web.servlet.view.InternalResourceViewResolver"/>
